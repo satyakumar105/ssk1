@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="abcdFlow" doc:id="f0cc17b9-0e96-4f64-b33a-98edef1aad12" >
 		<http:listener doc:name="Listener" doc:id="7d5f1eda-941e-4f20-a8fd-96db9642a214" config-ref="HTTP_Listener_config" path="/git"/>
-		<set-payload value='#["new repository"]' doc:name="Set Payload" doc:id="091a844f-11f6-4887-8f46-e42522501ff8" />
+		<set-payload value='#["old code"]' doc:name="Set Payload" doc:id="091a844f-11f6-4887-8f46-e42522501ff8" />
 		<logger level="INFO" doc:name="Logger" doc:id="a93e2882-addc-4fff-87a2-4b47a560ea95" message="#[payload]"/>
 	</flow>
 </mule>
